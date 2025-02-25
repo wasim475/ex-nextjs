@@ -1,10 +1,12 @@
 "use client"
 
-const CustomLink = () => {
+import Link from 'next/link'
+
+const CustomLink = ({children, pathName}) => {
   return (
-    <div>
-      
-    </div>
+    <>
+     <Link href={pathName} >{children}</Link> 
+    </>
   )
 }
 
