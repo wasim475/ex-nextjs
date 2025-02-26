@@ -9,8 +9,10 @@ export default function NewArrive(){
         <li>
           <CustomLink path={'/new-arraive/electronic'} >Electric</CustomLink>
         </li>
-        <li>Education</li>
-        <li>Homes</li>
+        <li>
+          <CustomLink path={'/new-arraive/education'} >Education</CustomLink>
+        </li>
+       
       </ul>
     );
 }
