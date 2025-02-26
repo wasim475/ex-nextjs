@@ -1,11 +1,13 @@
 "use client"
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-const CustomLink = ({children, pathName}) => {
+const CustomLink = ({children, path}) => {
+  const pathName = usePathname()
   return (
     <>
-     <Link href={pathName} >{children}</Link> 
+     <Link className={`${pathName===path ?"text-blue-500":""}`} href={path} >{children}</Link> 
     </>
   )
 }

@@ -6,7 +6,7 @@ const NewArrive = () => {
     <div>
       <ul>
         <li>
-          <CustomLink pathName={'/electronic'} >Electric</CustomLink>
+          <CustomLink path={'/electronic'} >Electric</CustomLink>
         </li>
         <li>Education</li>
         <li>Homes</li>
