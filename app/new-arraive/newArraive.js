@@ -2,7 +2,7 @@ import CustomLink from '../components/customLink/customLink';
 
 export default function NewArrive(){
     return (
-        <ul>
+        <ul className='flex justify-between'>
         <li>
           <CustomLink path={'/new-arraive'} >Home</CustomLink>
         </li>
@@ -11,6 +11,12 @@ export default function NewArrive(){
         </li>
         <li>
           <CustomLink path={'/new-arraive/education'} >Education</CustomLink>
+        </li>
+        <li>
+          <CustomLink path={'/new-arraive/heavy'} >Heavy</CustomLink>
+        </li>
+        <li>
+          <CustomLink path={'/new-arraive/books'} >Books</CustomLink>
         </li>
        
       </ul>

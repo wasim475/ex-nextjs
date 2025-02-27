@@ -1,11 +1,13 @@
-import SortProducts from './practpage/sortProducts';
-
+import { Suspense } from "react";
+import SortProducts from "./practpage/sortProducts";
 
 export default function Home() {
   // const [counter, setCounter]= useState()
   return (
     <main>
-     <SortProducts/>
+      <Suspense>
+        <SortProducts />
+      </Suspense>
     </main>
   );
 }
