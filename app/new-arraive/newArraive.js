@@ -16,6 +16,9 @@ export default function NewArrive(){
           <CustomLink path={'/new-arraive/heavy'} >Heavy</CustomLink>
         </li>
         <li>
+          <CustomLink path={'/new-arraive/blogs'} >Blogs</CustomLink>
+        </li>
+        <li>
           <CustomLink path={'/new-arraive/books'} >Books</CustomLink>
         </li>
        
