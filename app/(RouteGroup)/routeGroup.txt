@@ -1,0 +1,37 @@
+Next.js-এ Route Groups ব্যবহারের মাধ্যমে আপনি URL স্ট্রাকচার মেনটেইন করতে পারেন, কিন্তু ফোল্ডারের নাম URL-এ দেখানো হয় না।
+
+উদাহরণ ১: Admin Panel এর জন্য Route Group
+আপনি চাইলে অ্যাডমিন প্যানেলের জন্য /admin রুট গ্রুপ তৈরি করতে পারেন, কিন্তু ফোল্ডারের নাম _admin রাখলে এটি URL-এ দেখাবে না।
+
+ফোল্ডার স্ট্রাকচার:
+
+app
+ ├── _admin
+ │   ├── dashboard
+ │   │   ├── page.js
+ │   ├── settings
+ │   │   ├── page.js
+ ├── page.js
+ব্যবহার:
+/dashboard -> Admin Dashboard Page
+/settings -> Admin Settings Page
+এখানে _admin ফোল্ডারের নাম URL-এ দেখাবে না।
+
+উদাহরণ ২: Authentication Route Group
+আপনি যদি লগইন ও রেজিস্ট্রেশনের জন্য আলাদা গ্রুপ চান, তবে _auth নামে ফোল্ডার ব্যবহার করতে পারেন।
+
+ফোল্ডার স্ট্রাকচার:
+
+app
+ ├── _auth
+ │   ├── login
+ │   │   ├── page.js
+ │   ├── register
+ │   │   ├── page.js
+ ├── page.js
+ব্যবহার:
+/login -> Login Page
+/register -> Register Page
+এখানে _auth ফোল্ডারের নাম URL-এ থাকছে না, কিন্তু এর ভেতরের রাউটগুলো ঠিকমতো কাজ করবে।
+
+এভাবে Route Groups ব্যবহার করে Next.js-এ কোড স্ট্রাকচার পরিষ্কার ও সহজ করা যায়।
