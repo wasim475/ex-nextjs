@@ -7,7 +7,7 @@ export default function NewArrive(){
           <CustomLink path={'/new-arraive'} >Home</CustomLink>
         </li>
         <li>
-          <CustomLink path={'/new-arraive/electronic'} >Electric</CustomLink>
+          <CustomLink prefetch={false} path={'/new-arraive/electronic'} >Electric</CustomLink>
         </li>
         <li>
           <CustomLink path={'/new-arraive/education'} >Education</CustomLink>
