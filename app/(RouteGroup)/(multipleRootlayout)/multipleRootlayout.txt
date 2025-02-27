@@ -1,0 +1,50 @@
+ app/layout.js না রেখেও একাধিক Main Layout রাখতে যায়। এর জন্য  Route Groups ব্যবহার করে আলাদা আলাদা layout.js ফাইল তৈরি করতে হবে।
+
+🎯 উদাহরণ: আলাদা Layout ছাড়া Main Layout
+ধরি, আমরা চাই Admin এবং User আলাদা আলাদা layout.js ব্যবহার করুক, কিন্তু app/layout.js থাকবে না।
+
+📁 ফোল্ডার স্ট্রাকচার:
+pgsql
+Copy
+Edit
+app
+ ├── admin  <-- (Admin Route Group)
+ │   ├── layout.js  <-- (Admin Layout)
+ │   ├── dashboard
+ │   │   ├── page.js
+ ├── user  <-- (User Route Group)
+ │   ├── layout.js  <-- (User Layout)
+ │   ├── profile
+ │   │   ├── page.js
+✅ Step 1: Admin Layout (app/admin/layout.js)
+
+export default function AdminLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <h1>Admin Panel</h1>
+        {children}
+      </body>
+    </html>
+  );
+}
+🔹 এই Layout শুধুমাত্র /admin/* রুটের জন্য প্রযোজ্য।
+
+✅ Step 2: User Layout (app/user/layout.js)
+
+export default function UserLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <h1>User Dashboard</h1>
+        {children}
+      </body>
+    </html>
+  );
+}
+🔹 এই Layout শুধুমাত্র /user/* রুটের জন্য প্রযোজ্য।
+
+🚀 ব্যবহার:
+/admin/dashboard → Admin Layout
+/user/profile → User Layout
+⚡ app/layout.js না থাকলেও সমস্যা হবে না, কারণ Next.js আলাদা Route Group-এর layout.js ফাইল ডিরেক্ট লোড করবে। 🎉
