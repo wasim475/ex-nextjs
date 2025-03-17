@@ -1,4 +1,6 @@
-import { wait } from '../../../lib/wait';
+// import { wait } from '../../../lib/wait';
+
+import { wait } from '../../lib/wait';
 
 export default async function AssignmentsPage() {
     await wait(3000)
