@@ -1,5 +1,5 @@
-import Modal from "@/app/components/Modal";
-import photos from "@/app/gallery/images";
+import Modal from "../../../../component/Modal";
+import photos from "../../../../images";
 import Image from "next/image";
 
 export default function PhotoPage({ params }) {
