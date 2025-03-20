@@ -18,7 +18,7 @@ export default function PhotoPage({ params }) {
                     alt={photo.name}
                     src={photo.src}
                     // className="w-full object-cover aspect-square "
-                    className="w-full object-cover aspect-square "
+                    className="w-full "
                 />
             </div>
         </Modal>
