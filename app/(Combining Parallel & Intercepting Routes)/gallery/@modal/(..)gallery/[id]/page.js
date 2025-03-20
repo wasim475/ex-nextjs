@@ -17,6 +17,7 @@ export default function PhotoPage({ params }) {
                 <Image
                     alt={photo.name}
                     src={photo.src}
+                    // className="w-full object-cover aspect-square "
                     className="w-full object-cover aspect-square "
                 />
             </div>
