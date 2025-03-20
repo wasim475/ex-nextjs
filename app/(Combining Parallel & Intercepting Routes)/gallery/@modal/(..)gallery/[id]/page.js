@@ -8,7 +8,7 @@ export default function PhotoPage({ params }) {
 
     return (
         <Modal>
-            <div className="w-1/2 mx-auto">
+            <div className="w-3/4 mx-auto">
                 <div>
                     <h1 className="text-center lg:text-3xl font-bold my-4">
                         {photo.name}
