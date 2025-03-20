@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photos from "../images";
+import photos from "../../images";
 
 export default function PhotoPage({ params }) {
     const { id } = params;
