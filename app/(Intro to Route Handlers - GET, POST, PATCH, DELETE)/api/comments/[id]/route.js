@@ -11,6 +11,6 @@ export async function PATCH(request, {params}){
     const comment = await request.json()
     const commentId = params.id
     const commentIndex = comments.findIndex(comment=>comment.id === parseInt(commentId))
-
+    comments[commentIndex]= comment.text
     return Response.json(comment)
 }
