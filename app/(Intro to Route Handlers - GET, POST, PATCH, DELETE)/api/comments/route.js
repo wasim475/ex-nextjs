@@ -21,3 +21,7 @@ export async function POST(request){
         status:201
     })
 }
+
+export async function PATCH(request){
+    
+}
