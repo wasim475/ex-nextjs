@@ -20,3 +20,5 @@ const comments =[
         text:"comment-5"
     },
 ]
+
+export default comments
