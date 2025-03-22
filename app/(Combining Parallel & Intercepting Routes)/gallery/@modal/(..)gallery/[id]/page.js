@@ -10,7 +10,7 @@ export default function PhotoPage({ params }) {
         <Modal>
             <div className="w-3/4 mx-auto">
                 <div>
-                    <h1 className="text-center text-xs lg:text-3xl font-bold my-4">
+                    <h1 className="text-center text-sm lg:text-3xl font-bold my-4">
                         {photo.name}
                     </h1>
                 </div>
