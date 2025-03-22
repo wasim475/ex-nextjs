@@ -8,8 +8,9 @@ export async function GET(_request, {params}){  //option parametre er jonn _ use
 
 
 export async function PATCH(request, {params}){
+    const comment = await request.json()
     const commentId = params.id
     const commentIndex = comments.findIndex(comment=>comment.id === parseInt(commentId))
-    
+
     return Response.json(comment)
 }
