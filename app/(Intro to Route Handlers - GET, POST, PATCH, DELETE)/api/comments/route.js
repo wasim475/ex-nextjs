@@ -12,5 +12,12 @@ export async function POST(request){
         text: comment.text
     }
     comments.push(newComment)
-    return Response.json(newComment)
+    // return Response.json(newComment)
+
+    return new Response(JSON.stringify(newComment),{
+        headers:{
+            "Content-Type":"aplication/json"
+        },
+        status:201
+    })
 }
