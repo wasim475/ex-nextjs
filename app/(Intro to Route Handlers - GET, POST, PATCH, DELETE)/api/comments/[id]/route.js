@@ -14,3 +14,10 @@ export async function PATCH(request, {params}){
     comments[commentIndex]= comment.text
     return Response.json(comments[commentIndex])
 }
+export async function DELETE(_request, {params}){
+    const commentId = params.id
+    const commentIndex = comments.findIndex(comment=>comment.id === parseInt(commentId))
+    const commentToDelete = comments[commentIndex]
+    comments.slice(commentIndex,1)
+    return Response.json(commentToDelete)
+}
