@@ -1,7 +1,6 @@
 import comments from '../../../data/comments'
 import { redirect } from 'next/navigation'
 export async function GET(_request, {params}){  //option parametre er jonn _ use kore hoy... optional ja kichur jonno eti use hoy...
-    
     const commentId = params.id
     if(parseInt(commentId)> comments.length){
         redirect("/api/comments")
