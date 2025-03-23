@@ -7,6 +7,7 @@ export async function GET(request){
      console.log(request.cookies.get('theme')) //raw way to get cookies
 
      cookies().set('page','2') //nextjs way to set cookies
+     console.log(cookies().get('page')) //raw way to get cookies
 
      return new Response("profile-Info",{
         headers:{
