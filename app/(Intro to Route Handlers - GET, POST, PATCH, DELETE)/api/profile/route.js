@@ -5,5 +5,9 @@ export async function GET(request){
     const headerList = headers() //nextjs to get headers
      console.log(headerList.get("Authorization"));
 
-     return new Response("profile-Info")
+     return new Response("profile-Info",{
+        headers:{
+            'Set-Cookie':'theme=dark'
+        }
+     })
 }
