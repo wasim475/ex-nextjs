@@ -8,7 +8,7 @@ export async function GET(request){
 
      return new Response("profile-Info",{
         headers:{
-            'Set-Cookie':'theme=dark'
+            'Set-Cookie':'theme=dark' //raw way to set cookies
         }
      })
 }
