@@ -1,9 +1,10 @@
 import { headers } from 'next/headers';
 
 export async function GET(request){
-    // const requestHeaders = new Headers(request.headers); //row system to get headers
-    const headerList = headers() //nextjs to get headers
+    // const requestHeaders = new Headers(request.headers); //raw way to get headers
+    const headerList = headers() //nextjs way to get headers
      console.log(headerList.get("Authorization"));
+     console.log(request.cookies.get('theme')) 
 
      return new Response("profile-Info",{
         headers:{
