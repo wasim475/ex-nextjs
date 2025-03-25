@@ -11,5 +11,5 @@ export function middleware(request){
 
 export const config = {
     // matcher: '/dashboard'
-    matcher: ['/dashboard','/about','/photos']
+    matcher: ['/dashboard','/about','/photos'] // matcher অবশ্যই / দিয়ে শুরু হতে হবে
 }
