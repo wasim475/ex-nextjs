@@ -10,5 +10,6 @@ export function middleware(request){
 }
 
 export const config = {
-    matcher: '/dashboard'
+    // matcher: '/dashboard'
+    matcher: ['/dashboard','/about','/photos']
 }
