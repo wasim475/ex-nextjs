@@ -9,6 +9,6 @@ export function middleware(request){
     // return NextResponse.next()
 }
 
-export const config ={
-    matcher: '/gallery'
+export const config = {
+    matcher: '/dashboard'
 }
