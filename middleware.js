@@ -7,4 +7,7 @@ export function middleware(request) {
     (locale) => !pathName.startsWith(`/${locale}`),
     !pathName.startsWith(`/${locale}/`)
   );
+  if(pathNameIsMissingLocale){
+     // detect user's preference & redirect with a locale with a path eg: /en/about
+  }
 }
