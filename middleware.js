@@ -5,6 +5,10 @@ import Negotiator from 'negotiator'
 let defaultLocale = "en";
 let locales = ["bn", "en"];
 
+function getLocale(req){
+    const acceptLanguage = req.headers.get('accept-language') ?? undefined
+}
+
 export function middleware(request) {
   const pathName = request.nextUrl.pathname;
   const pathNameIsMissingLocale = locales.every(
