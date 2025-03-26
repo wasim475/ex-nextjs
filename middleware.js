@@ -11,6 +11,8 @@ export function middleware(request) {
   );
   if(pathNameIsMissingLocale){
      // detect user's preference & redirect with a locale with a path eg: /en/about
+     const locale = getLocale(request)
+     return NextResponse.redirect(new URL(`${locale}`))
   }
   return NextResponse.next()
 }
