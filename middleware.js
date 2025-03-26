@@ -1,3 +1,5 @@
+import { NextResponse } from 'next/server';
+
 let defaultLocale = "en";
 let locales = ["bn", "en"];
 
@@ -10,4 +12,5 @@ export function middleware(request) {
   if(pathNameIsMissingLocale){
      // detect user's preference & redirect with a locale with a path eg: /en/about
   }
+  return NextResponse.next()
 }
