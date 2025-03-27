@@ -9,7 +9,7 @@ function getLocale(req){
     const acceptLanguage = req.headers.get('accept-language') ?? undefined
     const headers = { 'accept-language': acceptLanguage }
     const languages = new Negotiator({ headers }).languages()
-    return match(languages, locales, defaultLocale) //preffered lan en
+    return match(languages, locales, defaultLocale) //preferred lan en
 }
 
 export function middleware(request) {
