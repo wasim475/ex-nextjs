@@ -1,4 +1,6 @@
-import { getDictionary } from "../dictionaries/dictionaries";
+// import { getDictionary } from "../dictionaries/dictionaries";
+
+import { getDictionary } from '../dictionaries/dictionaries';
 
 export default async function Contact({ params: { lang } }) {
     const dict = await getDictionary(lang);
