@@ -1,10 +1,10 @@
-import "../globals.css";
+import "../../globals.css";
 
 
 export default function langLayout({ children }) {
     return (
         <div>
-            <body>{children}</body>
+            <h1>{children}</h1>
         </div>
     );
 }
