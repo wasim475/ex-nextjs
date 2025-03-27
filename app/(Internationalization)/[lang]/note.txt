@@ -1,4 +1,4 @@
 এই ফোল্ডারের ভেতরেই rootlayout এবং page.js  নিয়ে আসতে হবে... প্রোজেক্টের সময়... এখন প্যাক্টিসের জন্য আমি layout and page ক্রিয়েট করে নিচ্ছি...
 
 github--> https://github.com/Learn-with-Sumit/rnext/tree/8.9
-video---> 
+video---> https://learnwithsumit.com/rnext/courses/rnext/internationalization
